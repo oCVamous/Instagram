@@ -1,0 +1,171 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <script src="script.js"></script>
+
+    <style>
+        body {
+            margin: 0px;
+        }
+
+        .body-box {
+            margin-left: 125px;
+            margin-right: 125px;
+        }
+
+        .newsletter-box {
+            background-color: green;
+        }
+
+        .e-mail {
+            display: flex;
+            justify-content: center;
+        }
+
+        form {
+            display: flex;
+        }
+
+        input {
+            width: 750px;
+            border-radius: 100px;
+        }
+
+        .individuell {
+            display: flex;
+            justify-content: center;
+            padding-top: 25px;
+            padding-bottom: 50px;
+        }
+
+        p {
+            padding: 25px;
+        }
+
+        button {
+            border-radius: 1000px;
+            height: 50px;
+            color: white;
+            background-color: grey;
+        }
+
+        .i-b {
+            padding-right: 200px;
+        }
+
+
+
+
+
+
+
+        .check-box-group {
+            display: flex;
+        }
+
+        .custom-checkbox {
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            margin: 10px 0;
+        }
+
+        .custom-checkbox .label {
+            font-size: 1.2em;
+            margin: 0 10px;
+        }
+
+        .custom-checkbox .checkmark {
+            width: 35px;
+            height: 35px;
+            border: 2px solid #222;
+            display: inline-block;
+            border-radius: 3px;
+            background: #222 url(https://upload.wikimedia.org/wikipedia/commons/thumb/2/27/White_check.svg/1200px-White_check.svg.png) center/1250% no-repeat;
+            transition: background-size 0.2s ease;
+        }
+
+        .custom-checkbox input:checked+.checkmark {
+            background-size: 60%;
+            transition: background-size 0.25s cubic-bezier(0.7, 0, 0.18, 1.24);
+        }
+
+        .custom-checkbox input {
+            display: none;
+        }
+    </style>
+</head>
+
+<body onload="includeHTML()">
+
+    <div class="body-box">
+
+        <div w3-include-html="templates/header.html"></div>
+
+        <h1>Melde dich zum Newsletter an</h1>
+
+
+        <div class="newsletter-box">
+            <div class="individuell">
+                <div class="check-box-group">
+                    <label class="custom-checkbox" tab-index="0" aria-label="Checkbox Label">
+                        <input type="checkbox" checked>
+                        <span class="checkmark"></span>
+                        <span class="label">Back mit Uns</span>
+                    </label>
+
+                    <label class="custom-checkbox" tab-index="0" aria-label="Another Label">
+                        <input type="checkbox">
+                        <span class="checkmark"></span>
+                        <span class="label">News der Woche</span>
+                    </label>
+
+                    <label class="custom-checkbox" tab-index="0" aria-label="Another Label">
+                        <input type="checkbox">
+                        <span class="checkmark"></span>
+                        <span class="label">Rezept des Tages</span>
+                    </label>
+                </div>
+
+                <a href="https://youtu.be/y1ATUFJyLaI"
+                    style="position: fixed; bottom: 25px; left: 25px; color: #222; text-shadow: 0 0 1px #222;"
+                    target="_blank">Watch Video Explanation</a>
+
+            </div>
+
+            <div class="e-mail">
+                <form action="patrick-sterz.developerakademie.com/send_mail.php" method="POST">
+                    <div class="i-b">
+                    <input name="e-mail-adress" placeholder="Deine E-Mail Adresse">
+
+                    <button type="submit">Jetzt kostenlos anmelden</button>
+                    </div>
+                </form>
+
+            </div>
+
+            <div class="kleingedrucktes">
+                <p>Nach der Anmeldung erhältst du eine E-Mail, in der du um Bestätigung deiner Anmeldung gebeten wirst.
+                    Du kannst dem Empfang unserer Newsletter jederzeit widersprechen, indem du den Abmeldelink in den
+                    Newslettern nutzt. Weitere Informationen zum Newsletter-Tracking, Datenschutz und Widerruf findest
+                    du in unseren Datenschutzhinweisen. </p>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <!-- footer-section -->
+    <div w3-include-html="templates/footer.html"></div>
+
+
+
+</body>
+
+</html>

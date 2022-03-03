@@ -1,0 +1,65 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        .dialog-bg {
+            background-color: rgba(0, 0, 0, 0.2);
+            z-index: 999;
+            position: fixed;
+            top: 0px;
+            right: 0px;
+            left: 0px;
+            bottom: 0px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .dialog {
+            height: 50vh;
+            width: 50vw;
+            background-color: white;
+            border: 1px solid lightgray;
+            border-radius: 10px;
+            padding: 24px;
+        }
+
+        .d-none {
+            display: none;
+        }
+    </style>
+
+    <script>
+        function openDialog(text){
+            document.getElementById('dialog').classList.remove('d-none');
+            document.getElementById('dialog-message').innerHTML = text;
+        }
+
+        function closeDialog() {
+            document.getElementById('dialog').classList.add('d-none');
+        }
+    </script>
+</head>
+
+<body>
+    <div id="dialog"class="dialog-bg d-none" onclick="closeDialog()">
+        <div class="Dialog">
+            <h1>Dialog</h1>
+            <p id="dialog-message">Informationen</p>
+        </div>
+    </div>
+
+    <h1>Überschrift</h1>
+
+    
+
+    <button onclick="openDialog('Hallo, dass ist eine Nachricht')">Dialog öffnen</button>
+    <button onclick="openDialog('Wer das hier liest hat JavaScript verstanden')">Dialog öffnen</button>
+</body>
+
+</html>

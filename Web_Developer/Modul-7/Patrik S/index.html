@@ -1,0 +1,53 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Notizen</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/marked/4.0.2/marked.min.js"
+        referrerpolicy="no-referrer"></script>
+    <script src="script.js"></script>
+</head>
+
+<body onload="init()">
+
+    <div id="allBlur" class="allBlur d-none" onclick="hideDialog()"></div>
+
+    <div class="content-box">
+        <div class="content">
+            <h2>Neue Notiz</h2>
+            <textarea id="title" placeholder="Titel schreiben..."></textarea> <br>
+            <textarea id="note" placeholder="Notiz schreiben..."></textarea>
+            <img class="add-img addBtn" src="img/add-img.png" id="btn" onclick="add()">
+        </div>
+
+        <div class="trash-box">
+            <div onclick="render('trash', 0)">
+                <div class="trash">
+                    <img class="trash-img" src="img/icons8-trash-64 (1).png" alt="">
+                </div>
+                <div class="span">
+                    <span>Papierkorb</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="content2" class="content2">
+        <div class="headline2">
+            <h2>Meine Notizen</h2>
+        </div>
+        <div id="myNotes" class="myNotes"></div>
+    </div>
+
+    <div class="end">
+        <span>This code was made with passion</span> <br>
+        <span>
+            © by Patrick Sterz 2022
+        </span>
+    </div>
+</body>
+
+</html>

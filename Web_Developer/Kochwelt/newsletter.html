@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Newsletter</title>
+
+    <style>
+        body {
+            margin: 0px;
+        }
+
+        .body-box {
+            margin-left: 125px;
+            margin-right: 125px;
+            padding-right: 5%;
+            padding-left: 5%;
+        }
+
+        .newsletter {
+            display: flex;
+            justify-content: center;
+        }
+
+
+        h1 {
+            text-align: center;
+        }
+
+        .e-mail {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        input {
+            width: 600px;
+            border-radius: 100px;
+            height: 50px;
+        }
+
+        button {
+            border-radius: 1000px;
+            height: 60px;
+            color: white;
+            background-color: grey;
+        }
+
+        .step1 {
+            padding-bottom: 100px;
+        }
+
+        .form {
+            width: 100%;
+        }
+
+        p {
+            padding-bottom: 50px;
+        }
+
+        .seperator-newsletter {
+            height: 3px;
+            background-color: green;
+            margin-top: 32px;
+            text-align: center;
+            width: 40%;
+        }
+
+        .newsletter-img {
+            width: 100%;
+            object-fit: contain;
+        }
+
+        /*
+        .newsletter-img {
+            padding-right: 5%;
+            padding-left: 5%;
+            width: 1250px;
+        }
+
+        p {
+            padding-right: 5%;
+            padding-left: 5%;
+        }
+        */
+
+
+
+
+
+
+
+
+
+
+
+        .check-box-group {
+            display: flex;
+            justify-content: space-around;
+        }
+
+        .custom-checkbox {
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            margin: 10px 0;
+        }
+
+        .custom-checkbox .label {
+            font-size: 1.2em;
+            margin: 0 10px;
+        }
+
+        .custom-checkbox .checkmark {
+            width: 35px;
+            height: 35px;
+            border: 2px solid #222;
+            display: inline-block;
+            border-radius: 3px;
+            background: #222 url(https://upload.wikimedia.org/wikipedia/commons/thumb/2/27/White_check.svg/1200px-White_check.svg.png) center/1250% no-repeat;
+            transition: background-size 0.2s ease;
+        }
+
+        .custom-checkbox input:checked+.checkmark {
+            background-size: 60%;
+            transition: background-size 0.25s cubic-bezier(0.7, 0, 0.18, 1.24);
+        }
+
+        .custom-checkbox input {
+            display: none;
+        }
+    </style>
+
+</head>
+
+<body onload="includeHTML()">
+    <div class="body-box">
+
+        <div w3-include-html="templates/header.html"></div>
+
+        <div class="newsletter">
+            <div class="seperator-newsletter"></div>
+            <span>NEWSLETTER</span>
+            <div class="seperator-newsletter"></div>
+        </div>
+
+        <h1>Frische Inspiration in dein Postfach</h1>
+
+        <img class="newsletter-img" src="img/newsletter-img.jpg" alt="">
+
+        <p>
+            Du suchst nach frischen Ideen für deinen Kochtopf und möchtest wissen, was los ist im Koch- und
+            Back-Universum? Dann legen wir dir unsere Newsletter ans Herz.
+        </p>
+        <div class="step1">
+            <h2>Schritt 1: Wähle deine(n) Wunsch-Newsletter</h2>
+
+            <div class="check-box-group">
+                <label class="custom-checkbox" tab-index="0" aria-label="Checkbox Label">
+                    <input type="checkbox" checked>
+                    <span class="checkmark"></span>
+                    <span class="label">Back mit Uns</span>
+                </label>
+
+                <label class="custom-checkbox" tab-index="0" aria-label="Another Label">
+                    <input type="checkbox">
+                    <span class="checkmark"></span>
+                    <span class="label">News der Woche</span>
+                </label>
+
+                <label class="custom-checkbox" tab-index="0" aria-label="Another Label">
+                    <input type="checkbox">
+                    <span class="checkmark"></span>
+                    <span class="label">Rezept des Tages</span>
+                </label>
+            </div>
+        </div>
+
+        <h2>Schritt 2: Gib hier deine E-Mailadresse ein</h2>
+
+        <div class="e-mail">
+            <form action="patrick-sterz.developerakademie.com/send_mail.php" method="POST">
+                <div class="i-b">
+                    <input name="e-mail-adress" placeholder="Deine E-Mail Adresse">
+
+                    <button type="submit">Jetzt kostenlos anmelden</button>
+                </div>
+            </form>
+
+        </div>
+
+        <div class="kleingedrucktes">
+            <p>Hinweis: Nach Absenden deiner E-Mailadresse bekommst du eine Bestätigungsmail von uns. Auch wenn du dich
+                für alle Newsletter entschieden hast. Klicke auf den Bestätigunslink in der Mail und du bekommst den
+                nächstmöglichen Newsletter zugesandt.
+                Übrigens: Natürlich sind unsere Newsletter kostenlos. Unsere Datenschutzhinweise findest du hier. </p>
+
+        </div>
+    </div>
+
+
+
+
+
+
+    </div>
+
+    <div w3-include-html="templates/footer.html"></div>
+
+
+    <script src="script.js"></script>
+</body>
+
+</html>

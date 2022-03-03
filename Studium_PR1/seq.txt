@@ -1,0 +1,5 @@
+a::2*count
+b::count*7-1
+c::count*(-10)+90
+d::count*count
+e::(count*count)+count+2

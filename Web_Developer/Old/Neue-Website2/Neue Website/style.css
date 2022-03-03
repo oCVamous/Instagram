@@ -1,0 +1,205 @@
+body {
+    margin: 0px;
+}
+
+img.header-image {
+    width: 100%;
+}
+
+.header-block {
+    color: white;
+    font-family: 'Courier New', Courier, monospace;
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    left: 0px;
+    height: 117vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+/*
+.header-block {
+    color: white;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 40px;
+    position: absolute;
+    top: 340px;
+    right: 0px;
+    left: 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+*/
+
+.header-block h1 {
+    font-size: 110px;
+    margin-block-start: 1.3em;
+    margin-block-end: 0em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-weight: bold;
+}
+
+.header-block p {
+    font-size: 22px;
+    margin-block-start: 0em;
+    margin-block-end: 6.5em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+}
+
+.btn-block {
+    display: flex;
+    justify-content: center;
+    width: 15vw;
+}
+
+.btn {
+    background-color: orange;
+    color: white;
+    font-family: 'PT Sans Caption', sans-serif;;
+    width: 250px;
+    /*
+    position: absolute;
+    top: 670px;
+    right: 0px;
+    left: 650px;
+    */
+    display: flex;
+    justify-content: center;
+    text-decoration: none;
+    padding: 15px;
+}
+
+.navigation-bar {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    padding: 30px;
+    justify-content: space-between;
+
+}
+.logo {
+    width: 100px;
+}
+
+.header-nav {
+    display: flex;
+    align-items: center;
+}
+
+.header-nav a {
+    color: white;
+    text-decoration: none;
+    /*
+    margin-left: 50px;
+    margin-right: 50px;
+    */
+    display: flex;
+    align-items: center;
+    margin-left: 32px;
+    margin-right: 32px;
+    object-fit: contain;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 20px;
+}
+
+.socials {
+    /*
+    display: flex;
+    height: 40px;
+    padding: 20px;
+    margin-left: 50px;
+    margin-right: 50px;
+    */
+    object-fit: contain;
+    display: flex;
+    align-items: center;
+}
+
+.social-media-icon {
+    object-fit: contain;
+    width: 32px;
+    height: 32px;
+    margin-left: 32px;
+    margin-right: 32px;
+}
+
+.categorie-block {
+    height: 50vh;
+    display: flex;
+    justify-content: center;
+    background-color: black;
+    align-items: center;
+}
+
+/*
+.elemente {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    padding: 50px;
+}
+*/
+
+.element {
+    display: flex;
+    flex-direction: column;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.element-text {
+    color: orange;
+}
+
+.element-image {
+    width: 350px;
+    height: 350px;
+    object-fit: contain;
+}
+   
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*
+<div class="categorie-block">
+    <div class="img-titles">
+        <div class="img-title">NEWS</div>
+        <div class="img-title">ALBUM</div>
+        <div class="img-title">STORE</div>
+    </div>
+
+    <div class="categories">
+        <div class="categorie">
+            <img class="categorie-pic" src="img/category1.png" alt="">
+        </div>
+
+        <div class="categorie">
+            <img class="categorie-pic" src="img/category2.png" alt="">
+    
+        </div>
+
+        <div class="categorie">
+            <img class="categorie-pic" src="img/category3.png" alt="">
+        </div>
+    </div>
+</div>
+*/

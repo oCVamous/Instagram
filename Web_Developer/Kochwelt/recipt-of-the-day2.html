@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rezept 2</title>
+
+    <script src="script.js"></script>
+
+    <style>
+        body {
+            margin: 0px;
+        }
+
+        .body-box {
+            margin-left: 125px;
+            margin-right: 125px;
+        }
+
+        .recipe-img {
+            display: flex;
+            margin-bottom: 30px;
+        }
+
+        .recipe1-img {
+            height: 200px;
+            width: 1200px;
+            object-fit: cover;
+            border-radius: 10px;
+        }
+
+        .recipe-infos {
+            display: flex;
+            justify-content: space-around;
+            height: 35px;
+        }
+
+        .recipe-infos p {
+            padding: 20px;
+        }
+
+        .mini-icon {
+            display: flex;
+            align-items: center;
+            background-color: grey;
+            border-radius: 10px;
+            margin-right: 30px;
+        }
+
+        .icon {
+            height: 20px;
+        }
+
+        table tr:nth-child(odd) td {
+            background: #ccc;
+        }
+
+        table tr:nth-child(even) td {
+            background: #fff;
+        }
+
+        tr:nth-child(even) {
+            background: #CCC
+        }
+
+        tr:nth-child(odd) {
+            background: #FFF
+        }
+
+        .Effort-Cleaning-Price-Performance-Ratio {
+            display: flex;
+            height: 35px;
+            margin-bottom: 35px;
+        }
+
+        .Effort-Cleaning-Price-Performance-Ratio p {
+            padding: 20px;
+            margin: 20px;
+        }
+
+        .user {
+            display: flex;
+            align-items: center;
+        }
+
+        .profile-img {
+            height: 50px;
+            border-radius: 100%;
+        }
+
+        .component-list {
+            margin-top: 50px;
+            border-collapse: collapse;
+        }
+
+        .components {
+            margin-bottom: 50px;
+        }
+
+        .table,
+        th,
+        td {
+            padding-right: 100px;
+        }
+    </style>
+
+</head>
+
+<body onload="includeHTML()">
+    <div class="body-box">
+
+        <div w3-include-html="templates/header.html"></div>
+
+        <div class="recipe of the day1">
+            <div class="recipe-title">
+                <h1> Zoodle-Garnelen-Bowl</h1>
+            </div>
+
+            <div class="recipe-img">
+                <img class="recipe1-img" src="img/img2.jpg" alt="">
+            </div>
+
+            <div class="recipe-infos">
+                <div class="mini-icon">
+                    <img class="icon" src="img/icons/clock-regular.svg" alt="">
+                    <p>X-Min</p>
+                </div>
+
+                <div class="mini-icon">
+                    <img class="icon" src="img/icons/brain-solid.svg" alt="">
+                    <p>easy-peasy</p>
+
+                </div>
+
+                <div class="mini-icon">
+                    <img class="icon" src="img/icons/calendar-alt-regular.svg" alt="">
+                    <p>1.1.2021</p>
+
+                </div>
+
+            </div>
+        </div>
+
+
+        <div class="components">
+            <div class="portions">
+
+            </div>
+            <input id="js_portionInput" name="portion" type="number" placeholder="Portionen" value="1">
+            <div class="components-list">
+                <table class="component-list">
+                    <tr class="d1">
+                        <td>Zucchini</td>
+                        <td class="js_portionCalculationReceiver" data-unit="g" data-quantity="100">4 Stück</td>
+                    </tr>
+                    <tr class="d2">
+                        <td>Garnelen</td>
+                        <td class="js_portionCalculationReceiver" data-unit="g" data-quantity="140">300g</td>
+                    </tr>
+                    <tr class="d1">
+                        <td>Tomaten</td>
+                        <td class="js_portionCalculationReceiver" data-unit="g" data-quantity="130">3 Stück</td>
+                    </tr>
+                    <tr class="d2">
+                        <td>Rote Linsen</td>
+                        <td class="js_portionCalculationReceiver" data-unit="g" data-quantity="500">30g</td>
+                    </tr>
+                    <tr class="d1">
+                        <td>Tomatenmark</td>
+                        <td class="js_portionCalculationReceiver" data-unit="g" data-quantity="100">20g</td>
+                    </tr>
+                    <tr class="d2">
+                        <td>Ingwer</td>
+                        <td>bisschen</td>
+                    </tr>
+                    <tr class="d1">
+                        <td>Gewürze</td>
+                        <td>nach belieben</td>
+                    </tr>
+                    <tr class="d2">
+                        <td>Liebe</td>
+                        <td>So viel wie geht</td>
+                    </tr>
+                </table>
+
+
+            </div>
+
+            <div class="how-to">
+                <h2>Zubereitung</h2>
+
+                <div class="Effort-Cleaning-Price-Performance-Ratio">
+
+                    <div class="mini-icon">
+                        <img class="icon" src="img/icons/clock-regular.svg" alt="">
+                        <p>15-Min</p>
+                    </div>
+
+                    <div class="mini-icon">
+                        <img class="icon" src="img/icons/pizza-3-32.ico" alt="">
+                        <p>10-Min</p>
+                    </div>
+
+                    <div class="mini-icon">
+                        <img class="icon" src="img/icons/price-tag-euro-32.ico" alt="">
+                        <p>5,75 € </p>
+                    </div>
+
+                </div>
+
+                <span>
+                    1: Garnelen nur kurz anbraten und gegebenen falls würzen und danach auf einem extra Teller tun <br>
+                    2: Zucchini in den Spaghetti-Schneider rein tun und dann anbraten. <br>
+                    3: Rote Linsen hinzufügen. <br>
+                    4: Tomatenmark hinzufügen. <br>
+                    5: Tomaten kleinschneiden <br>
+                    6: Das Gericht in der Pfanne mit Gewürzen und Ingwer verfeinern. <br>
+                    7: Sobald die Zucchini weicher geworden sind können die Garnelen wieder rein. <br>
+                
+                
+                </span>
+
+
+
+                <div class="explain">
+
+                </div>
+            </div>
+
+            <div class="creator">
+                <h2>Rezept erstellt von:</h2>
+
+                <div class="user">
+                    <img class="profile-img" src="img/profile.png" alt="">
+                    <div class="user-name">
+                        <h2>Junus</h2>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+<!-- footer-section -->
+    <div w3-include-html="templates/footer.html"></div>
+
+
+</body>
+
+</html>

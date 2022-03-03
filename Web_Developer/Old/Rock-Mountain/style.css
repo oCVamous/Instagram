@@ -1,0 +1,383 @@
+body {
+    margin: 0px;
+}
+
+img.header-image {
+    width: 100%;
+}
+
+.header {
+    background-image: url(img/header.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.header_text1 {
+    font-size: 3.5em;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: white;
+}
+
+.header_text2 {
+    font-size: 1.5em;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: white;
+    margin-bottom: -2em;
+}
+
+.header-block {
+    color: white;
+    font-family: 'Courier New', Courier, monospace;
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    left: 0px;
+    height: 117vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+/*
+.header-block {
+    color: white;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 40px;
+    position: absolute;
+    top: 340px;
+    right: 0px;
+    left: 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+*/
+
+.header-block h1 {
+    font-size: 110px;
+    margin-block-start: 1.3em;
+    margin-block-end: 0em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-weight: bold;
+}
+
+.header-block p {
+    font-size: 22px;
+    margin-block-start: 0em;
+    margin-block-end: 6.5em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+}
+
+.btn-block {
+    display: flex;
+    justify-content: center;
+    width: 15vw;
+}
+
+.btn {
+    background-color: orange;
+    color: white;
+    font-family: 'PT Sans Caption', sans-serif;;
+    width: 250px;
+    /*
+    position: absolute;
+    top: 670px;
+    right: 0px;
+    left: 650px;
+    */
+    display: flex;
+    justify-content: center;
+    text-decoration: none;
+    padding: 15px;
+}
+
+.navigation-bar {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    padding: 30px;
+    justify-content: space-between;
+
+}
+.logo {
+    width: 100px;
+}
+
+.header-nav {
+    display: flex;
+    align-items: center;
+}
+
+.header-nav a {
+    color: white;
+    text-decoration: none;
+    /*
+    margin-left: 50px;
+    margin-right: 50px;
+    */
+    display: flex;
+    align-items: center;
+    margin-left: 32px;
+    margin-right: 32px;
+    object-fit: contain;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 20px;
+}
+
+.socials {
+    /*
+    display: flex;
+    height: 40px;
+    padding: 20px;
+    margin-left: 50px;
+    margin-right: 50px;
+    */
+    object-fit: contain;
+    display: flex;
+    align-items: center;
+}
+
+.social-media-icon {
+    object-fit: contain;
+    width: 32px;
+    height: 32px;
+    margin-left: 32px;
+    margin-right: 32px;
+}
+
+.categorie-block {
+    display: flex;
+    justify-content: center;
+    background-color: black;
+    align-items: center;
+}
+
+.element {
+    display: flex;
+    flex-direction: column;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.element-title {
+    color: orange;
+}
+
+.element-img {
+    height: 350px;
+    width: 350px;
+    object-fit: contain;
+}
+
+.grey {
+    background-color: darkgray;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.element2-img {
+    height: auto;
+    width: 350px;
+    object-fit: cover;
+}
+
+.element2 {
+    color: white;
+    max-width: 300px;
+}
+
+.grey-btn {
+    margin-right: 30px;
+}
+
+.grey-left {
+    display: flex;
+}
+
+.element2_text {
+    color: white;
+    max-width: 300px;
+    font-size: 20px;
+    padding: 20px;
+}
+
+.element2_text span {
+    margin-top: 80px;
+}
+
+.white {
+    color: orange;
+    height: 15vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+/*
+.headline {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 1000px;
+}
+*/
+
+.img-bottom {
+    width: 100vw;
+    object-fit: contain;
+}
+
+.footer-row{
+    background-color: black;
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer-left {
+    display: flex;
+    align-items: flex-end;
+    color: white;
+    margin: 40px;
+    text-align: center;
+    font-family: 'Courier New', Courier, monospacee;
+}
+
+/*
+.footer-right {
+    display: flex;
+}
+*/
+
+.footer-text {
+    color: white;
+    text-align: center;
+}
+
+.socials-footer-img {
+    display: flex;
+    height: 50px;
+    width: 50px;
+    object-fit: contain;
+}
+
+.btn-footer {
+    display: flex;
+    margin: 40px;
+}
+
+.socials-footer {
+    display: flex;
+    justify-content: center;
+    margin: 60px;
+    justify-content: space-around;
+}
+
+@media(max-width:1000px) {
+    body {
+        font-size: 1.5em;
+    }
+
+    .header {
+        background-size: cover;
+        height: 50vh;
+    }
+
+    h1 {
+        font-size: 0.4em !important;
+        text-align: center;
+        margin-block-start: 0;
+    }
+
+    span { 
+        font-size: 0.3em;
+        text-align: center;
+        margin-block-end: 0;
+    }
+
+    .hide-mobile {
+        display: none;
+    }
+
+    .categorie-block {
+        flex-direction: column;
+        padding: 1em;
+    }
+
+    .grey {
+        flex-direction: column;
+    }
+
+    .grey-left {
+        flex-direction: column;
+        width: 100%;
+        display: flex;
+        align-items: center;
+    }
+
+    .element2_text {
+        text-align: center;
+        width: 100vw;
+    }
+
+    .btn-block {
+        padding: 1em;
+    }
+
+    .element2-img {
+        width: 100%;
+    }
+
+    .footer-row {
+        flex-direction: column;
+    }
+
+    .footer-left {
+        display: flex;
+        justify-content: center;
+    }
+
+    .btn-footer {
+        justify-content: center;
+        margin: 1em;
+    }
+
+    .img-bottom {
+        width: 100%;
+    }
+
+    .element2-img {
+        width: 90%;
+    }
+
+    .element-img {
+        width: 100%;
+    }
+    
+     /*
+        <div class="header">
+            <div class="header-block">
+                <h1>ROCK MOUNTAIN</h1>
+                <p>Discover the best live music</p>
+            
+                <div class="btn-block">
+                    <a class="btn"href="#">UPCOMING SHOW</a>
+                </div>
+            </div>
+        </div>
+        */
+    
+}

@@ -1,0 +1,198 @@
+1. Ausdrücke programmieren (9Punkte)
+    a. 
+        int n1 = 1;
+        int n2 = 2;
+        int n3 = 3;
+        double durchschnitt = ((double)(n1+n2+n3))/3;
+        // Oder n1+n2+n3/(double)3
+
+        Der explizite Ausdruck: `(double)`
+
+    b.
+        char[] alphabet =
+                    {     
+                        'a', 'c', 'd', 'e', 'f', 'g', 'h', 'i',
+                        'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q',
+                        'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z'
+                    };
+
+        int k = 3;
+        char k = alphabet[k];
+
+        Der explizite Ausdruck: `[k]`
+
+
+    c.
+        double n = 1.12;
+        // Wenn 1.12 kleiner gleich n UND n kleiner als 1.13
+        boolean z = 1.12 <= n && n < 1.13;
+        
+        Der explizite Ausdruck: `1.12 <= n && n < 1.13`
+
+
+2. Wie lautet die Ausgabe (8 Punkte)
+des folgenden Programms:
+
+import.java.awt.*;
+public class M {
+public static void methode(Point a, Point b, int k,
+String s) {
+a = new Point();
+a.x = 9;
+b.x = 15;
+k = 11;
+s = s + "Y";
+}
+
+public static void main(String[] args) {
+Point a = new Point(2, 2);
+Point b = new Point(4, 4);
+int k = 5;
+String s = "B";
+
+methode(a, b, k, s);System.out.println(a.x);
+System.out.println(b.x);
+System.out.println(k);
+System.out.println(s);
+}
+}
+
+Lösung zu 2)
+System.out.println(a.x);    -----> 9
+System.out.println(b.x);    -----> 15
+System.out.println(k);      -----> 5
+System.out.println(s);      -----> "B"
+
+
+3. Boolesche Methode (5Punkte)
+
+Lösung zu 3)
+public static boolean isDivisor(int a, int b) {
+    if (a / b == 0 || b / a == 0) {
+      return true;
+    }
+    return false;
+  }
+
+
+4. Schleifen (8Punkte)
+
+Lösung zu 4)
+int width = 12;
+for (int i = 0; i < width / 2; i++) {
+  for (int j = 0; j < width - (i * 2+1); j++) {
+    System.out.print("+");
+  }
+  System.out.print("/");
+
+  for (int j = 0; j < i*2; j++) {
+    System.out.print("*");
+  }
+  
+
+5. Array und ArrayList (7 Punkte)
+
+Lösung zu 5)
+public static void copyArrayToList(double[] arr, ArrayList<double> list) {
+    for (int i = arr.length-1; i >= 0; i--) {
+      list.add(arr[i]);
+    }
+  }
+
+
+6. Texteingabe (3 Punkte)
+
+Lösung zu 6)
+
+7. Maps und Sets (?? Punkte)
+
+Lösung zu 7a)
+public static HashSet<String> b(HashSet<String> set1, HashSet<String> set2, HashSet<String> result) {
+    HashMap<String, HashSet<String>> gesucht = new HashMap<>();
+    HashMap<String, HashSet<String>> geboten = new HashMap<>();
+    gesucht.put("Hans", set1);
+
+    var georgSet = new HashSet<String>();
+    georgSet.add("Mann");
+    georgSet.add("optimistisch");
+    georgSet.add("sportlich");
+    georgSet.add("offen");
+
+    var marieSet = new HashSet<String>();
+    marieSet.add("Frau");
+    marieSet.add("humorvoll");
+    marieSet.add("zuverlässig");
+    marieSet.add("spontan");
+    marieSet.add("sportlich");
+
+    var annaSet = new HashSet<String>();
+    annaSet.add("Frau");
+    annaSet.add("humorvoll");
+    annaSet.add("ehrlich");
+    annaSet.add("sportlich");
+
+    geboten.put("Georg", georgSet);
+    geboten.put("Marie", marieSet);
+    geboten.put("Anna", annaSet);
+
+Lösung zu 7b)
+var hansSet = gesucht.get("Hans");
+    for (var personEntry : geboten.entrySet()) {
+      // Wenn die gebotene Person nicht die gesuchte Person selbst ist
+      if (personEntry != hansSet) {
+        // Gehe durch jede Eigenschaft der Person
+        int matchCount = 0;
+        for (var personEigenschaft : personEntry.getValue()) {
+
+          // Prüfe welche Eigenschaft sich ähnelt
+          if (hansSet.contains(personEigenschaft)) {
+            matchCount++;
+
+            // Wenn es 3 ähnelnde Eigenschaften gab, haben wir genug verglichen
+            if (matchCount == 3) {
+              // Geboten bekommt Hans nun die Person mit den 3 ähnelnden Eigenschaften
+              geboten.put("Hans", personEntry.getValue());
+              break;
+            }
+
+          }
+
+        }
+      }
+    }
+  }
+}
+
+Lösung zu 7c)
+
+Lösung zu 7d)
+
+
+8. Geheimnisprinzip (3 Punkte)
+
+Lösung zu 8)
+
+[ X ] c) Schutz durch kryptographische Verschlüsselung methoden-
+interner Algorithmen
+
+
+9. Rekursion (8 Punkte)
+
+Lösung zu 8)
+public class Rekur {
+    public static void main(String[] args) {
+        rekur(0, "0", "....#..##....#.##.....###.#.#...#...".toCharArray());
+    }
+
+    public static void rekur(int index, String weg, char[] array) {
+        if (index == array.length-1) {
+            System.out.println(weg);
+        } else if (index > array-length-1) {
+            return;
+        } else if (array(index) == '#') {
+            return;
+        }
+        rekur(index+1, weg + ", " +  (index+1), array);
+        rekur(index+1, weg + ", " +  (index+6), array);
+    }
+}

@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rezept 1</title>
+
+    <style>
+        body {
+            margin: 0px;
+        }
+        .body-box {
+            margin-left: 125px;
+            margin-right: 125px;
+        }
+        .recipe-img {
+            display: flex;
+            margin-bottom: 30px;
+        }
+        .recipe1-img {
+            height: 200px;
+            width: 1200px;
+            object-fit: cover;
+            border-radius: 10px;
+        }
+        .recipe-infos {
+            display: flex;
+            justify-content: space-around;
+            height: 35px;
+        }
+        .recipe-infos p {
+            padding: 20px;
+        }
+        .mini-icon {
+            display: flex;
+            align-items: center;
+            background-color: grey;
+            border-radius: 10px;
+            margin-right: 30px;
+        }
+        .icon {
+            height: 20px;
+        }
+        table tr:nth-child(odd) td {
+            background: #ccc;
+        }
+        table tr:nth-child(even) td {
+            background: #fff;
+        }
+        tr:nth-child(even) {
+            background: #CCC
+        }
+        tr:nth-child(odd) {
+            background: #FFF
+        }
+        .Effort-Cleaning-Price-Performance-Ratio {
+            display: flex;
+            height: 35px;
+            margin-bottom: 35px;
+        }
+        .Effort-Cleaning-Price-Performance-Ratio p {
+            padding: 20px;
+            margin: 20px;
+        }
+        .user {
+            display: flex;
+            align-items: center;
+        }
+        .profile-img {
+            height: 50px;
+            border-radius: 100%;
+        }
+        .component-list {
+            margin-top: 50px;
+            border-collapse: collapse;
+        }
+        .components {
+            margin-bottom: 50px;
+        }
+        .table, th, td {
+            padding-right: 100px;
+        }
+    </style>
+
+</head>
+
+<body onload="includeHTML()">
+    <div class="body-box">
+
+        <div w3-include-html="templates/header.html"></div>
+
+        <div class="recipe of the day1">
+            <div class="recipe-title">
+                <h1>Chili sin Carne</h1>
+            </div>
+
+            <div class="recipe-img">
+                <img class="recipe1-img" src="img/shrimp-1209744_1920.jpg" alt="">
+            </div>
+
+            <div class="recipe-infos">
+                <div class="mini-icon">
+                    <img class="icon" src="img/icons/clock-regular.svg" alt="">
+                    <p>X-Min</p>
+                </div>
+
+                <div class="mini-icon">
+                    <img class="icon" src="img/icons/brain-solid.svg" alt="">
+                    <p>easy-peasy</p>
+
+                </div>
+
+                <div class="mini-icon">
+                    <img class="icon" src="img/icons/calendar-alt-regular.svg" alt="">
+                    <p>1.1.2021</p>
+
+                </div>
+
+            </div>
+        </div>
+
+
+        <div class="components">
+            <div class="portions">
+
+            </div>
+            <input id="js_portionInput" name="portion" type="number" placeholder="Portionen" value="1">
+            <div class="components-list">
+                <table class="component-list">
+                    <tr class="d1">
+                        <td>Rote Linsen</td>
+                        <td class="js_portionCalculationReceiver" data-unit="g" data-quantity="100">100g</td>
+                    </tr>
+                    <tr class="d2">
+                        <td>Mais</td>
+                        <td class="js_portionCalculationReceiver" data-unit="g" data-quantity="140">140g</td>
+                    </tr>
+                    <tr class="d1">
+                        <td>Kidney-Bohnen</td>
+                        <td class="js_portionCalculationReceiver" data-unit="g" data-quantity="130">130g</td>
+                    </tr>
+                    <tr class="d2">
+                        <td>Passierte Tomaten</td>
+                        <td class="js_portionCalculationReceiver" data-unit="g" data-quantity="500">500g</td>
+                    </tr>
+                    <tr class="d1">
+                        <td>Kichererbsen</td>
+                        <td class="js_portionCalculationReceiver" data-unit="g" data-quantity="100">100g</td>
+                    </tr>
+                    <tr class="d2">
+                        <td>Paprika</td>
+                        <td class="js_portionCalculationReceiver" data-unit="Ganze" data-quantity="1">1 Ganze</td>
+                    </tr>
+                    <tr class="d1">
+                        <td>Gewürze</td>
+                        <td>nach belieben</td>
+                    </tr>
+                    <tr class="d2">
+                        <td>Liebe</td>
+                        <td>So viel wie geht</td>
+                    </tr>
+                </table>
+
+
+            </div>
+        </div>
+
+        <div class="how-to">
+            <h2>Zubereitung</h2>
+
+            <div class="Effort-Cleaning-Price-Performance-Ratio">
+
+                <div class="mini-icon">
+                    <img class="icon" src="img/icons/clock-regular.svg" alt="">
+                    <p>20-Min</p>
+                </div>
+
+                <div class="mini-icon">
+                    <img class="icon" src="img/icons/pizza-3-32.ico" alt="">
+                    <p>5-Min</p>
+                </div>
+
+                <div class="mini-icon">
+                    <img class="icon" src="img/icons/price-tag-euro-32.ico" alt="">
+                    <p>1,85 € </p>
+                </div>
+
+            </div>
+
+            <span>Das Rezept eignet sich hervorragend für alle Kochänfanger und oder Faule, da es nicht einfacher geht: Nehmen Sie einfach einen großen Topf/Pfanne und packen zuerst die passierten Tomaten rein und kochen Sie dies auf Mittlerer Hitze. Nach einigen Mitzuten schütten Sie einfach die restlichen Zutaten, bis auf Paprika herein. <br> <b>Actung</b> Mais, Kidney Bohnen und Kichererbsen mit der Flüssigkeit! </span>
+
+
+
+            <div class="explain">
+
+            </div>
+        </div>
+
+        <div class="creator">
+            <h2>Rezept erstellt von:</h2>
+
+            <div class="user">
+                <img class="profile-img" src="img/profile.png" alt="">
+                <div class="user-name">
+                    <h2>Junus</h2>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <div w3-include-html="templates/footer.html"></div>
+
+
+    <script src="script.js"></script>
+</body>
+
+</html>

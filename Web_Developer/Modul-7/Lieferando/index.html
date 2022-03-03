@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Deliver At Home</title>
+
+    <style>
+        body {
+            margin: 0px;
+            font-family: 'Roboto', sans-serif;
+        }
+
+        .header {
+            height: 75px;
+            background: #ff9900;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            font-family: 'Roboto', sans-serif;
+        }
+
+        .header img {
+            height: 50px;
+            margin-left: 25px;
+            background-image: url(img/pizzaImg.jpgr);
+            background-attachment: fixed
+        }
+
+        #main {
+            display: flex;
+        }
+
+        .header h2 {
+            color: white;
+        }
+
+        .header span {
+            color: white;
+            margin-right: 25px;
+        }
+
+        #content {
+            background-image: url(img/pizzaImg.jpg);
+            background-size: contain;
+            justify-content: center;
+            height: 30vh;
+            width: 60vw;
+            background-attachment: fixed
+        }
+
+        #basket {
+            width: 40vw;
+            background-color: white;
+            text-align: center;
+            font-family: 'Roboto', sans-serif;
+            position: sticky;
+            top: 0;
+            display: flex;
+            justify-content: center;
+            border-bottom: 0.1px solid lightgrey;
+        }
+
+        .basketBox {
+            height: 1500px;
+            box-shadow: 0px 7px 6px 5px rgb(0 0 0 / 35%);
+        }
+
+
+        #restaurantInfo {
+            display: flex;
+            height: 60px;
+            margin-top: 200px;
+            justify-content: space-between;
+        }
+
+        #restaurantInfo h2 {
+            margin-left: 35px;
+            font-family: 'Roboto', sans-serif;
+        }
+
+        .btnContent1 {
+            height: 35px;
+            width: 35px;
+        }
+
+        .btnContent2 {
+            height: 35px;
+            width: 35px;
+        }
+
+        .btnContentBox {
+            display: flex;
+            margin-top: 17px;
+            margin-right: 60px;
+        }
+
+        .restaurantImg {
+            border-radius: 100px;
+            height: 80px;
+        }
+
+        .navBar {
+            height: 8vh;
+            background-color: lightgrey;
+            display: flex;
+            font-family: sans-serif;
+            display: flex;
+            justify-content: center;
+            margin-bottom: 25px;
+        }
+
+        .menuCard {
+            height: 20px;
+            margin-left: 30px;
+            margin-right: 30px;
+            box-shadow: 0px 0px 6px 5px rgba(0,0,0,0.35);
+            padding-top: 15px;
+            height: 30px;
+            background-color: lightgrey;
+        }
+
+        .menuCard b{
+            margin-left: 10px;
+        }
+
+        #foodBox {
+            margin-left: 30px;
+            margin-right: 30px;
+            padding-top: 50px;
+            padding-bottom: 25px;
+        }
+
+        #food {
+            box-shadow: 0px 0px 6px 5px rgba(0,0,0,0.35);
+            padding: 10px;
+            font-family: sans-serif;
+            margin: 20px;
+        }
+
+        .seperator {
+            height: 2px;
+            background-color: grey;
+        }
+    </style>
+
+    <script>
+        let shoppingBasket = [];
+        let prices = [];
+
+        function addToBasket(name, price) {
+            name.push(name);
+            price.push(price);
+        }
+
+        function updateShoppingBasket() {
+            let sum = 0;
+
+            for (let i = 0; i < array.length; i++) {
+                sum += prices[i];
+            }
+
+            let finalSum = sum + 3.95;      //3.95 ----> Versand
+
+            document.getElementById(...).innerHTML = sum;
+        }
+    </script>
+</head>
+
+<body>
+    <!-- Header-Section -->
+    <div class="header">
+        <img src="img/logoWhiteImg.png" alt="">
+        <h2>Your Adress</h2>
+        <span>Optionen</span>
+
+    </div>
+
+    <!-- Content-Section -->
+    <div id="main">
+        <div id="content">
+            <div id="restaurantInfo">
+                <h2>Pizza Mafia</h2>
+                <div class="restaurantImgBox">
+                    <img class="restaurantImg" src="img/restaurant.png" alt="">
+                </div>
+
+                <div class="btnContentBox">
+                    <button class="btnContent1"></button>
+                    <button class="btnContent2"></button>
+                </div>
+
+            </div>
+
+            <div class="navBar">
+                <h3>Navigation durch die Karte</h3>
+            </div>
+
+            <div class="menuCard">
+                <b>Beliebte Gerichte</b>
+            </div>
+
+            <div id="foodBox">
+                <div id="food">
+                    <h4>Mafia Deluxe</h4>
+                    <span>Fleisch, Fleisch und noch mehr Fleisch</span>
+                </div>
+                <div id="food">
+                    <h4>Gucci Gang Margeherita</h4>
+                    <span>Mit SUCUK Fleisch Bruder!</span>
+                </div>
+                <div id="food">
+                    <h4>Narcos Spezial</h4>
+                    <span>Richtig fett <b>SCHARF</b> + Überraschung</span>
+                </div>
+                <div id="food">
+                    <h4>Pablo Escobar Pizza</h4>
+                    <span>Wahlweise: <br>
+                        1. Mit ohne alles <br>
+                        2. Alles oder Nix!</span>
+                </div>
+                <div id="food">
+                    <h4>John Gott</h4>
+                    <span>NYC Style und heftig Käse</span>
+                </div>
+                <div id="food">
+                    <h4>Police</h4>
+                    <span>Pizza ohne Fleisch und Käse, du 31er</span>
+                </div>
+                <div id="food">
+                    <h4>Geldwäshe</h4>
+                    <span>Nudel-Pizza</span>
+                </div>
+                <div id="food">
+                    <h4>Haftbefehl</h4>
+                    <span>Im Grunde eine Margherita Pizza</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="basketBox">
+            <div id="basket">
+                <div class="title">
+                    <h3>Warenkorb</h3>
+                </div>
+    
+                <div class="seperator"></div>
+    
+                <div class="selectedItem">
+    
+                </div>
+    
+                <div class="bill">
+    
+                </div>
+    
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer-Section -->
+    <div id="footer"></div>
+
+</body>
+
+</html>

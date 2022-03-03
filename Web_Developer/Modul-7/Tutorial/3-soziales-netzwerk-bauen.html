@@ -1,0 +1,51 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        .post {
+            width: 500px;
+            height: 150px;
+            border: 1px solid lightgray;
+            padding: 8px;
+            margin-top: 32px;
+        }
+    </style>
+
+    <script>
+        let posts = [];
+
+        function addPost() {
+            let text = document.getElementById('message').value;
+            posts.push(text);
+
+            let myposts = document.getElementById('myposts');
+            myposts.innerHTML = '';
+            for (let i = 0; i < posts.length; i++) {
+                myposts.innerHTML += `
+                <div class="post">
+                    ${posts[i]}
+                </div>
+                `;
+            }
+        }
+    </script>
+</head>
+
+<body>
+    <input id="message" type="text" placeholder="Neuer Post..."> <button onclick="addPost()">Posten</button>
+
+    <div id="myposts">
+
+    </div>
+    <!--
+        div class="post">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis corporis, tenetur porro repudiandae, quidem provident veniam asperiores velit expedita adipisci sint! Quod, error nemo optio voluptate ex odio debitis deleniti.
+    </div> -->
+</body>
+
+</html>

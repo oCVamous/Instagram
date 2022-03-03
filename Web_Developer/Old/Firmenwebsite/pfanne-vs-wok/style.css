@@ -1,0 +1,1192 @@
+/* Startpage */
+
+body {
+    margin: 0px;
+    font-family: 'Helvetica', 'Arial', sans-serif;
+    width: 100%;
+}
+
+.content {
+    width: 1000px;
+    margin: 0px auto;
+}
+
+.content_start {
+    width: 1000px;
+    margin: 0px auto;
+}
+
+.body-box {
+    width: 100%
+}
+
+.body-box_start {
+    margin: 0px auto;
+}
+
+
+/* FIRST SECTION  *******************************************************/
+
+.first-section {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    padding: 50px;
+}
+
+.img-french-croissants {
+    height: 250px;
+    width: 350px;
+}
+
+.first-section-child-one {
+    align-items: center;
+}
+
+.first-section-child-two {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    max-width: 300px;
+}
+
+.btn_start {
+    width: 200px;
+    height: 50px;
+    background: rgb(0, 0, 0, 0.8);
+    border: none;
+    color: white;
+    border-radius: 4px;
+}
+
+.btn_start:hover {
+    background: rgb(0, 0, 0);
+    cursor: pointer;
+}
+
+
+/* ****************************************************************************** */
+
+.new-inspirations {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding-top: 15px;
+    background-color: #EFEFEF;
+    border-radius: 10px;
+}
+
+.inspiration-elemente {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.inspiration-img {
+    height: 200px;
+    width: 300px;
+    object-fit: cover;
+}
+
+.element_start {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+
+/* ************************************************************************************* */
+
+.box_start {
+    display: flex;
+    flex-direction: column;
+}
+
+.box_start h1 {
+    text-align: center;
+    margin: 50px;
+}
+
+.box-text_start {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.box-text_start p {
+    max-width: 400px;
+}
+
+.img-wok {
+    height: 200px;
+    /* padding: 50px; */
+}
+
+
+/* Media query**************************************** */
+
+@media(max-width: 1000px) {
+    .body-box {
+        margin: 0;
+    }
+    .first-section {
+        flex-direction: column;
+        padding: 0;
+    }
+    .img-french-croissants {
+        height: 100%;
+        width: 100%;
+    }
+    .first-section-child-two {
+        align-items: center;
+        max-width: none;
+        margin-bottom: 42px;
+    }
+    .first-section-child-two span {
+        text-align: center;
+        margin-bottom: 20px;
+    }
+    .new-inspirations {
+        flex-direction: column;
+        border-radius: unset;
+    }
+    .inspiration-elemente {
+        flex-direction: column;
+    }
+    .inspiration-img {
+        height: 200px;
+        width: 300px;
+    }
+    .box_start h1 {
+        text-align: center;
+        margin: 0;
+    }
+    .box-text_start {
+        flex-direction: column;
+    }
+    .box-text_start p {
+        text-align: center;
+        padding: 15px;
+    }
+    .img-wok {
+        height: 200px;
+        width: 300px;
+    }
+    .content_start {
+        width: 100%;
+    }
+    .content {
+        width: 90%;
+    }
+    .textfields {
+        width: 100% !important;
+    }
+    .input=fields textarea {
+        width: 90% !important;
+    }
+    .right {
+        border-left: unset !important;
+    }
+}
+
+.seperator1 {
+    height: 3px;
+    width: 160px;
+    background-color: green;
+    margin-top: 32px;
+}
+
+.TÜV {
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+
+.Credits h3,
+a {
+    text-decoration: none;
+}
+
+.dataPrivacy_healine {
+    font-size: 24px;
+}
+
+
+/* Datenschutz */
+
+h1 {
+    text-align: center;
+    color: green;
+    padding-top: 30px;
+}
+
+.left-right-box {
+    display: flex;
+    justify-content: center;
+    width: 900px;
+    margin: 0px auto;
+    width: 1000px;
+}
+
+.left {
+    max-width: 875px;
+    margin-right: 16px;
+}
+
+button {
+    background-color: green;
+    color: white;
+    height: 75px;
+    width: 500px;
+    font-size: 20px;
+}
+
+.button {
+    padding-bottom: 20px;
+}
+
+a {
+    text-decoration: none;
+}
+
+.right {
+    padding-top: 30px;
+    max-width: 400px;
+    border-left: 1px solid black;
+    margin-left: 16px;
+}
+
+.otl {
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.phone {
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.advice-call {
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.e-mail {
+    padding-bottom: 10px;
+    padding-top: 10px;
+}
+
+.textfields {
+    padding-top: 25px;
+    display: flex;
+}
+
+.input-categorie {
+    max-width: 20px;
+}
+
+.textarea-commentar {
+    height: 125px;
+}
+
+.right-box {
+    padding-left: 20px;
+}
+
+.left-box {
+    padding-top: 20px;
+}
+
+.text {
+    padding-bottom: 20px;
+}
+
+.btn-send {
+    background-color: green;
+    width: 150px;
+    height: 50px;
+}
+
+@import url('https://fonts.googleapis.com/css?family=Rubik&display=swap');
+.box {
+    width: 640px;
+    margin: 100px auto;
+    background: #fff;
+    border-radius: 7px;
+    box-shadow: 1px 2px 4px rgba(0, 0, 0, .3);
+}
+
+.box .heading {
+    background: green;
+    border-radius: 7px 7px 0px 0px;
+    padding: 10px;
+    color: #fff;
+    text-align: center;
+}
+
+.faqs {
+    padding: 0px 20px 20px;
+}
+
+ ::-webkit-details-marker {
+    float: right;
+    margin-top: 3px;
+}
+
+details {
+    background: #f6f6f6;
+    padding: 10px 20px;
+    border-radius: 7px;
+    margin-top: 20px;
+    font-family: "Rubik";
+    font-size: 14px;
+    letter-spacing: 1px;
+    cursor: pointer;
+}
+
+details summary {
+    outline: none;
+}
+
+@media(max-width: 1000px) {
+    .left-right-box {
+        width: 90%;
+        flex-direction: column;
+    }
+    .right {
+        margin: 0px auto;
+        border-left: unset;
+        padding-left: unset;
+    }
+    .box {
+        width: 90%;
+    }
+}
+
+
+/* FAQ */
+
+.header {
+    padding-bottom: 24px;
+}
+
+.a_without_border {
+    border-bottom: transparent !important;
+}
+
+.left-right-box {
+    display: flex;
+    justify-content: center;
+    width: 900px;
+    margin: 0px auto;
+    width: 1000px;
+}
+
+.text_faqs {
+    font-family: 'Helvetica', 'Arial', sans-serif;
+}
+
+.left {
+    max-width: 875px;
+    margin-right: 16px;
+}
+
+button {
+    background-color: green;
+    color: white;
+    height: 75px;
+    width: 500px;
+    font-size: 20px;
+}
+
+.button {
+    padding-bottom: 20px;
+}
+
+a {
+    text-decoration: none;
+}
+
+.right {
+    padding-top: 30px;
+    max-width: 400px;
+    border-left: 1px solid black;
+    margin-left: 16px;
+}
+
+.otl {
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.phone {
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.advice-call {
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.e-mail {
+    padding-bottom: 10px;
+    padding-top: 10px;
+}
+
+.textfields {
+    padding-top: 25px;
+    display: flex;
+}
+
+.input-categorie {
+    max-width: 20px;
+}
+
+.right-box {
+    padding-left: 20px;
+}
+
+.left-box {
+    padding-top: 20px;
+}
+
+.text {
+    padding-bottom: 20px;
+}
+
+.btn-send {
+    background-color: green;
+    width: 150px;
+    height: 50px;
+}
+
+@import url('https://fonts.googleapis.com/css?family=Rubik&display=swap');
+.box {
+    width: 640px;
+    margin: 100px auto;
+    background: #fff;
+    border-radius: 7px;
+    box-shadow: 1px 2px 4px rgba(0, 0, 0, .3);
+}
+
+.box .heading {
+    background: green;
+    border-radius: 7px 7px 0px 0px;
+    padding: 10px;
+    color: #fff;
+    text-align: center;
+}
+
+.faqs {
+    padding: 0px 20px 20px;
+}
+
+.text_faqs {}
+
+ ::-webkit-details-marker {
+    float: right;
+    margin-top: 3px;
+}
+
+details {
+    background: #f6f6f6;
+    padding: 10px 20px;
+    border-radius: 7px;
+    margin-top: 20px;
+    font-size: 14px;
+    letter-spacing: 1px;
+    cursor: pointer;
+    font-family: 'Helvetica', 'Arial', sans-serif;
+}
+
+details summary {
+    outline: none;
+}
+
+@media(max-width: 1000px) {
+    .left-right-box {
+        width: 90%;
+        flex-direction: column;
+    }
+    .right {
+        margin: 0px auto;
+        border-left: unset;
+        padding-left: unset;
+    }
+    .box {
+        width: 90%;
+    }
+}
+
+
+/* Impressum */
+
+.seperator1 {
+    height: 3px;
+    width: 160px;
+    background-color: green;
+    margin-top: 32px;
+}
+
+.TÜV {
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+
+.Credits h3,
+a {
+    text-decoration: none;
+}
+
+
+/* Jobs */
+
+.application {
+    display: flex;
+}
+
+.jobs-video {
+    width: 100%;
+    object-fit: cover;
+    padding-top: 25px;
+}
+
+.text-box {
+    padding-top: 50px;
+}
+
+.text-box a {
+    color: green;
+}
+
+.application {
+    display: flex;
+    padding-top: 25px;
+}
+
+.img-one {
+    width: 100%;
+    object-fit: cover;
+    height: 300px;
+}
+
+.img-two {
+    width: 100%;
+    object-fit: cover;
+    height: 300px;
+}
+
+.slideShow {
+    width: 100%;
+}
+
+@media(max-width: 1000px) {
+    .jobs-video {
+        width: 100%;
+    }
+    .slideShow {
+        width: 100%;
+    }
+}
+
+
+/* Kontakt */
+
+.left-right-box {
+    display: flex;
+    justify-content: space-between;
+}
+
+.left_kontakt {
+    display: flex;
+    flex-direction: column;
+}
+
+.input-fields_kontakt {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+textarea {
+    background-color: #80808066;
+    height: 50px;
+    padding: 20px;
+}
+
+.kontakt-inputs {
+    border-radius: 100px;
+    margin: 10px;
+    height: 50px;
+}
+
+button {
+    background-color: green;
+    color: white;
+    height: 75px;
+    width: 500px;
+    font-size: 20px;
+}
+
+.button {
+    padding-bottom: 20px;
+}
+
+a {
+    text-decoration: none;
+}
+
+.right {
+    padding-top: 30px;
+    max-width: 400px;
+    border-left: 1px solid black;
+}
+
+.otl {
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.phone {
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.advice-call {
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.e-mail {
+    padding-bottom: 10px;
+    padding-top: 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+.textfields {
+    padding-top: 25px;
+    display: flex;
+}
+
+.input-categorie {
+    max-width: 20px;
+}
+
+.textarea-commentar {
+    height: 125px;
+}
+
+.right-box {
+    padding-left: 20px;
+}
+
+.left-box {
+    padding-top: 20px;
+}
+
+.text {
+    padding-bottom: 20px;
+}
+
+.btn-send {
+    background-color: green;
+    width: 150px;
+    height: 50px;
+}
+
+@media(max-width: 1000px) {
+    .hide-mobile {
+        display: none;
+    }
+}
+
+
+/* Newsletter ***************************************************************************************/
+
+.newsletter {
+    display: flex;
+    justify-content: center;
+}
+
+.e-mail {
+    display: flex;
+    justify-content: space-between;
+}
+
+
+/* input {
+    width: 600px;
+    border-radius: 100px;
+    height: 50px;
+} */
+
+button {
+    border-radius: 1000px;
+    height: 60px;
+    color: white;
+    background-color: grey;
+}
+
+.step1 {
+    padding-bottom: 100px;
+}
+
+.form {
+    width: 100%;
+}
+
+p {
+    padding-bottom: 50px;
+}
+
+.seperator-newsletter {
+    height: 3px;
+    background-color: green;
+    margin: 0px 32px;
+    text-align: center;
+    align-self: center;
+    width: 40%;
+}
+
+.newsletter-img {
+    width: 100%;
+    object-fit: contain;
+}
+
+
+/*
+        .newsletter-img {
+            padding-right: 5%;
+            padding-left: 5%;
+            width: 1250px;
+        }
+
+        p {
+            padding-right: 5%;
+            padding-left: 5%;
+        }
+        */
+
+.check-box-group {
+    display: flex;
+    justify-content: space-around;
+}
+
+.custom-checkbox {
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    margin: 10px 0;
+}
+
+.custom-checkbox .label {
+    font-size: 0.5em;
+    margin: 0 10px;
+}
+
+.custom-checkbox .checkmark {
+    width: 35px;
+    height: 35px;
+    border: 2px solid #222;
+    display: inline-block;
+    border-radius: 3px;
+    background: #222 url(https://upload.wikimedia.org/wikipedia/commons/thumb/2/27/White_check.svg/1200px-White_check.svg.png) center/1250% no-repeat;
+    transition: background-size 0.2s ease;
+}
+
+.custom-checkbox input:checked+.checkmark {
+    background-size: 60%;
+    transition: background-size 0.25s cubic-bezier(0.7, 0, 0.18, 1.24);
+}
+
+.custom-checkbox input {
+    display: none;
+}
+
+@media(max-width: 1000px) {
+    .check-box-group {
+        display: block;
+    }
+}
+/* Rezepte  */
+
+.recipe-img {
+    display: flex;
+    margin-bottom: 30px;
+    width: 100%;
+}
+
+.recipe1-img {
+    height: 200px;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.recipe-infos {
+    display: flex;
+    justify-content: flex-start;
+    height: 40px;
+    margin-top: 32px;
+}
+
+.recipe-infos p {
+    padding: 20px;
+}
+
+.mini-icon {
+    display: flex;
+    align-items: center;
+    background-color: #EFEFEF;
+    border-radius: 10px;
+    margin-right: 30px;
+    width: 180px;
+    justify-content: center;
+}
+
+.icon {
+    height: 20px;
+}
+
+table tr {
+    height: 50px;
+    border-radius: 10px;
+}
+
+table {
+    width: 100%;
+}
+
+table tr:nth-child(odd) td {
+    background: #EFEFEF;
+    border-radius: 10px;
+    padding-left: 16px;
+}
+
+table tr:nth-child(even) td {
+    background: #fff;
+    padding-left: 16px;
+}
+
+tr:nth-child(even) {
+    background: #EFEFEF;
+}
+
+tr:nth-child(odd) {
+    background: #FFF
+}
+
+.Effort-Cleaning-Price-Performance-Ratio {
+    display: flex;
+    height: 40px;
+    margin-bottom: 35px;
+}
+
+.Effort-Cleaning-Price-Performance-Ratio p {
+    padding: 20px;
+}
+
+.user {
+    display: flex;
+    align-items: center;
+}
+
+.profile-img {
+    height: 80px;
+    border-radius: 100%;
+    margin: 16px;
+}
+
+.component-list {
+    margin-top: 16px;
+    border-collapse: collapse;
+}
+
+.components {
+    margin-bottom: 50px;
+}
+
+.table,
+th,
+td {
+    padding-right: 100px;
+}
+
+.PortionInputRow {
+    padding-top: 32px;
+    padding-left: 16px;
+}
+
+.portionInput {
+    height: 30px;
+    width: 200px;
+    text-align: right;
+    border: 1px solid grey;
+    border-radius: 4px;
+}
+
+@media(max-width: 1000px) {
+    .body-box {
+        width: 100%;
+    }
+    .recipe-infos {
+        flex-direction: column;
+        align-items: center;
+        height: unset;
+    }
+    .mini-icon {
+        height: 40px;
+        margin: 16px;
+        width: 100%;
+    }
+    .PortionInputRow {
+        display: flex;
+        justify-content: center;
+    }
+    .user {
+        justify-content: center;
+    }
+    .Effort-Cleaning-Price-Performance-Ratio {
+        flex-direction: column;
+        height: unset;
+        justify-content: center;
+        align-items: center;
+    }
+    .PortionInputRow {
+        margin-left: 16px;
+        margin-right: 16px;
+        padding-left: unset;
+    }
+}
+
+
+/* Widerruf */
+
+.seperator1 {
+    height: 3px;
+    width: 160px;
+    background-color: green;
+    margin-top: 32px;
+}
+
+.TÜV {
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+
+.Credits h3,
+a {
+    text-decoration: none;
+}
+
+
+/* Header ************************************** */
+
+.navigation-bar {
+    display: flex;
+    justify-content: space-around;
+    box-shadow: 0 3px 7px 0 rgba(19, 20, 20, 0.32);
+}
+
+.img-nav-bar {
+    height: 100px;
+}
+.img-nav-bar-responsiv{
+    height: 50px;
+    width: 45px;
+    margin-left: 30px;
+}
+
+.links {
+    display: flex;
+    align-items: flex-end;
+    align-items: center;
+}
+
+.navigation-bar a {
+    color: black;
+    font-size: 25px;
+    font-family: Arial, Helvetica, sans-serif;
+    text-decoration: green;
+    padding-left: 15px;
+    padding-right: 15px;
+    border-bottom: 4px solid transparent;
+}
+
+.navigation-bar a:hover {
+    border-bottom: 4px solid green;
+    color: green;
+    transition: all 225ms ease-in-out;
+}
+
+
+/* BURGER-MENU******************************** */
+
+.burger-menu {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    display: none;
+}
+
+label {
+    font-size: 60px;
+    margin-right: 50px;
+    cursor: pointer;
+}
+
+#toggle {
+    display: none;
+}
+
+@media screen and (max-width: 1000px) {
+    .burger-menu {
+        display: flex;
+        justify-content: space-between;
+    }
+    #display-none{
+        display: none !important;
+    }
+    .navigation-bar {
+        display: none;
+    }
+    .navigation-bar.show {
+        display: block;
+    }
+    .navigation-bar a {
+        display: block;
+        border: 1px solid gray;
+        height: 70px;
+        line-height: 70px;
+        width: 100%;
+    }
+    .navigation-bar img {
+        display: none;
+    }
+    .links {
+        display: block;
+        width: 100%;
+        text-align: center;
+        align-items: center;
+    }
+    .other {
+        flex-direction: column;
+    }
+}
+
+.footer {
+    background-color: rgb(18, 18, 18);
+    padding: 50px;
+    margin-top: 100px;
+}
+
+.socials-title {
+    display: flex;
+    justify-content: center;
+    color: white;
+}
+
+.socials {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding-top: 30px;
+}
+
+.social-img {
+    height: 50px;
+    width: 50px;
+    object-fit: cover;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-bottom: 50px;
+}
+
+.seperator {
+    height: 3px;
+    background-color: green;
+    margin-top: 32px;
+}
+
+.other {
+    display: flex;
+    justify-content: space-around;
+    color: white;
+}
+
+.other a {
+    color: white;
+    text-decoration: none;
+    padding-top: 2.5px;
+    padding-bottom: 2.5px;
+}
+
+.company {
+    display: flex;
+    flex-direction: column;
+}
+
+.quicklinks {
+    display: flex;
+    flex-direction: column;
+}
+
+.newsletter-FAQ {
+    display: flex;
+    flex-direction: column;
+}
+
+.copyright {
+    display: flex;
+    justify-content: center;
+    padding-top: 30px;
+    color: white;
+}
+
+.TÜV {
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+
+.Credits h3,
+a {
+    text-decoration: none;
+}
+
+.img-p-vs-w {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vh;
+    width: 50vw;
+    object-fit: cover;
+    width: 100%;
+    padding-bottom: 50px;
+    padding-top: 50px;
+}
+
+.tipp {
+    padding: 25px;
+    background: rgba(0, 0, 0, 0.2);
+}
+
+.content-p-w {
+    width: 900px;
+    margin: 0px auto;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.p-w-mini-text {
+    color: grey;
+}
+
+@media screen and (max-width: 1000px) {
+.content-p-w {
+    width: 100%;
+}
+}
+

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Witze</title>
+</head>
+
+<body> 
+    <h1 id="headline">Programmier-Witze</h1>
+
+    <button onclick="joke1()">Witz 1</button>
+    <button onclick="joke2()">Witz 2</button>
+    <button onclick="joke3()">Witz 3</button>
+
+    <p id="joke">
+        Die Selbsthilfegruppev"HTML-Sonderzeichen Probleme" trifft sich heute im gro&lig ;en Saal.
+    </p>
+
+    <script>
+        function joke1() {
+            document.getElementById('joke').innerHTML = `
+            Was macht ein Pirat am Computer? Er drückt die <b> ENTER-Taste! </b>
+            <br>
+            <img class="funny-image" src="lustig.png">
+            `;
+        }
+
+        function joke2() {
+            document.getElementById('joke').innerHTML = 'Die Selbsthilfegruppev"HTML-Sonderzeichen Probleme" trifft sich heute im gro&lig ;en Saal.';
+        }
+
+        function joke3() {
+            document.getElementById('joke').innerHTML = 'Wo geht ein Programmierer morgens hin? Zur Arbyte!';
+        }
+    </script>
+
+
+</body>
+</html>

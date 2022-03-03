@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jobs</title>
+
+    <script src="script.js"></script>
+
+    <style>
+        body {
+            margin: 0px;
+            color: #333;
+        }
+
+        .body-box {
+            margin-left: 125px;
+            margin-right: 125px;
+            padding-right: 5%;
+            padding-left: 5%;
+        }
+
+        .application {
+            display: flex;
+        }
+
+        .jobs-video {
+            width: 80%;
+            object-fit: cover;
+            padding-top: 25px;
+            margin-left: 100px;
+            margin-right: 100px;
+        }
+
+        .text-box {
+            margin-left: 150px;
+            margin-right: 150px;
+            padding-top: 50px;
+        }
+
+        .text-box a {
+            color: green;
+        }
+
+        .application {
+            display: flex;
+            padding-top: 25px;
+        }
+
+        .img-one {
+            width: 100%;
+            object-fit: cover;
+            height: 300px;
+        }
+
+        .img-two {
+            width: 100%;
+            object-fit: cover;
+            height: 300px;
+        }
+    </style>
+
+    <script>
+
+        let images = ['img/diashow2.png', 'img/diashow3.png', 'img/diashow4.png'];
+        let i = 0;
+
+        function image1() {
+            document.getElementById('image').src = images[i];   //i hat den Wert: 0
+            i++;
+            setTimeout(image2, 6000);
+        }
+        function image2() {
+            document.getElementById('image').src = images[1];   //i hat den Wert: 1
+            i++;
+            setTimeout(image3, 6000);
+        }
+        function image3() {
+            document.getElementById('image').src = images[2];   //i hat den Wert: 2
+            i = 0;
+            setTimeout(image1, 6000);
+        }
+    </script>
+
+</head>
+
+<body onload="includeHTML()">
+    <div class="body-box">
+
+        <div w3-include-html="templates/header.html"></div>
+
+        <img class="jobs-video" src="img/jobs-img.png" alt="">
+
+        <div class="text-box">
+
+            <b> Wir bei Chefkoch glauben, gemeinsam schmeckt es besser. Gemeinsames Hinterfragen, Weiterentwickeln,
+                Lernen
+                und <br>
+                Klotzen stehen deshalb im Mittelpunkt unserer Arbeit. So liefern wir unseren Nutzer:innen das Rezept für
+                <br>
+                gemeinsame Momente des Glücks und unterstützen sie im gesamten Kochprozess. <br> </b>
+            <br>
+            Mit bis zu 22 Mio. Unique Usern pro Monat ist Chefkoch Europas reichweitenstärkste Plattform im Bereich
+            Kochen
+            <br>
+            und Rezepte und zählt zu den reichweitenstärksten Onlineportalen in Deutschland. Die Chefkoch GmbH ist mit
+            Sitz
+            <br>
+            in Bonn eine 100%ige Tochtergesellschaft der Gruner + Jahr GmbH. Seit 1998 betreiben wir das Kochportal <br>
+            Chefkoch.de und sind seitdem auf über 100 Mitarbeiter:innen angewachsen. Damit geben wir uns aber nicht <br>
+            zufrieden: wir planen, weiterzuwachsen! Fühlst Du Dich angesprochen? <br>
+            <br>
+            <br>
+            <b> Offene Stellen – wie für Dich gemacht! <br> </b>
+            <br>
+            <br>
+            Als Remote-first-Company bieten wir maximale Flexibilität: Du entscheidest, ob Du zu Hause oder im Büro
+            arbeiten
+            <br>
+            möchtest. Als neugierige Teamplayer arbeiten wir mit Leidenschaft daran, uns und Chefkoch ständig <br>
+            weiterzuentwickeln. Wenn Du gerne in flachen Hierarchien arbeitest und es Dir wichtig ist, im Team Ziele zu
+            <br>
+            erreichen, freuen wir uns auf Deine Bewerbung. <br>
+            <br>
+            Hier findest Du unsere offenen Stellen: <br>
+            <br>
+            <b> WEB DEVELOPMENT </b> <br>
+            <br>
+            <a href="#">Junior Web Developer (m/w/d) - Fullstack</a> <br>
+            <a href="#">Senior Web Developer (m/w/d) Go</a> <br>
+            <a href="#">Senior Web Developer (m/w/d) PHP</a> <br>
+            <a href="#">Web Developer (m/w/d) Go</a> <br>
+            <a href="#">Web Developer (m/w/d) PHP</a> <br>
+            <br>
+            <b>MOBILE DEVELOPMENT</b> <br>
+            <br>
+            <a href="#">Senior Android Developer (m/w/d)</a> <br>
+            <br>
+            <b>INFRASTRUCTURE</b> <br>
+            <br>
+            <a href="#">Senior Systemadministrator (m/w/d) Cloud</a> <br>
+            <br>
+            <b>PRODUCT DESIGN</b> <br>
+            <br>
+            <a href="#">UI Designer (m/w/d)</a> <br>
+            <br>
+            <h2>Wir sind Chefkoch</h2> <br>
+            <br>
+            Wir haben viel vor – und freuen uns deshalb auf tatkräftige Unterstützung. Dich erwarten herausfordernde
+            <br>
+            Aufgaben, die Deine Lösungsorientierung fordern. Fragt man unsere Chefköch:innen, ist ihnen jede Mühe wert.
+            Sie
+            <br>
+            liefern Dir fünf Argumente, Deine Zelte abzubrechen und Dich jetzt bei Chefkoch zu bewerben: <br>
+
+
+            <!-- JavaScript-Shit-section -->
+            <br>
+            <button onclick="image2()">Start</button>
+            <img id="image" src="img/Diashow1.png" alt="">
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+
+            <h2>Was Bewerber:innen wissen wollen</h2> <br>
+            <br>
+            Wir werden häufig gefragt, in welcher Form die Bewerbung bei uns eingehen soll und wie der
+            Recruiting-Prozess
+            <br>
+            abläuft. Die wichtigsten Informationen rund um Deine Bewerbung fassen wir nachfolgend zusammen. <br>
+            <br>
+            <b> Wie ist eure Postadresse? Ich würde euch gerne meine Bewerbungsmappe schicken. </b> <br>
+            Wir sind ein digitales Unternehmen, deshalb passen zu uns nur digitale Bewerbungen. Also spar dir das Geld
+            für
+            <br>
+            eine Bewerbungsmappe und kauf dir davon lieber ein Stück Kuchen! <br>
+            <br>
+            <b>Wie geht's weiter, wenn ich meine Bewerbung abgeschickt habe?</b> <br>
+            Nach dem Eingang deiner Bewerbung sichten wir Deine Unterlagen. Wenn Dein Profil mit unseren Anforderungen
+            an
+            <br>
+            neue Chefköche:innen übereinstimmt, dann kommt es zu einem ersten Telefoninterview (optional) oder direkt zu
+            <br>
+            einem ersten persönlichen Kennenlernen. Geht es in die zweite Runde, erfolgt ein weiteres Gespräch mit dem
+            <br>
+            Abteilungsleiter und HR sowie ein zusätzlicher fachlicher Austausch mit dem Team. <br>
+            <br>
+            <b>Müsst ihr eigentlich "stempeln"?</b> <br>
+            Wir gehen davon aus, dass Teams am besten arbeiten können, wenn sie ihre Arbeitszeit frei gestalten können.
+            <br>
+            Deswegen arbeiten wir bei Chefkoch nach dem Prinzip der Vertrauensarbeitszeit. Was genau dahinter steckt,
+            <br>
+            erläutern wir dir gerne in einem Vorstellungsgespräch. Fest steht nur: wir haben eine 40-Stunden-Woche und
+            30
+            <br>
+            Tage Jahresurlaub. Aber an Heilig Abend und Silvester gibt's jeweils einen halben Urlaubstag extra. <br>
+            <br>
+            <b>Duzt oder siezt ihr euch?</b> <br>
+            Du hast es ja schon bei der Stellenausschreibung gemerkt: uns kannst Du duzen. Das ist bei uns so üblich.
+            <br>
+            Wundere Dich also nicht, wenn wir Dich schon beim Bewerbungsgespräch mit einem freundlichen "Hallo, wie
+            geht's
+            <br>
+            dir?" begrüßen. Selbstverständlich duzen wir nicht nur unsere Bewerber:innen, die Bewerber:innen duzen uns
+            auch.
+            <br>
+            <br>
+            <b>Was könnte ich bei einem Vorstellungsgespräch anziehen?</b> <br>
+            Aktuell finden alle Vorstellungsgespräche digital via Teams statt. Anzug und Kostüm kannst du im Schrank
+            lassen.
+            <br>
+            Wir bezeichnen unseren Kleidungsstil als Casual (Chic). <br>
+
+
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+
+            <div class="how-to-contact-us">
+                <h2>So kontaktierst Du uns </h2>
+                <span>
+                    So neuer Chefkoch:in! Wenn wir Dich überzeugt haben, freuen wir uns auf Deine Bewerbung. Sei mutig
+                    und
+                    zeig
+                    uns,
+                    wer Du bist - oder wie man im Rheinland sagen würde: et hätt noch emmer joot jejange!
+
+                    Gerne kannst du uns auch per WhatsApp kontaktieren: ‪01515 7523091‬
+                </span>
+
+                <div class="application">
+                    <div class="one">
+                        <img class="img-one" src="img/marina-creuzberg.png" alt="">
+
+                        <b>Marina Creuzberg</b>
+                        <p>HR Managerin</p> <br>
+                        <br>
+                        Ist seit September 2015 ein Chefkoch und freut sich jeden Tag über zahlreiche spannende
+                        Bewerbungen.
+                        Am
+                        liebsten hat sie Bewerber:innen, die sich vor dem ersten Gespräch über Chefkoch informiert
+                        haben.
+                        Aber
+                        übertreiben muss man's auch nicht! <br>
+                        <a href="Marina.Creuzberg@chefkoch.de"></a>
+                    </div>
+
+                    <div class="two">
+                        <img class="img-two" src="img/lena-johnen.png" alt="">
+
+                        <b>Lena Johnen</b>
+                        <p>Recruiterin</p> <br>
+                        <br>
+                        Unterstützt im Recruiting bei der Suche nach neuen Talenten, die durch aussagekräftige
+                        Bewerbungen
+                        überzeugen können. Freut sich über personalisierte Bewerbungen, die die Person hinter der
+                        Bewerbung
+                        zum
+                        Vorschein bringen. <br>
+                        <a href="Lena.Johnen@chefkoch.de"></a>
+                    </div>
+
+                </div>
+
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <h2>Datenschutz im Recruiting </h2>
+
+                Der Schutz Deiner personenbezogenen Daten bei der Bearbeitung während des gesamten Bewerbungsprozesses
+                ist
+                für
+                uns ein wichtiges Anliegen und wir möchten, dass Du Dich beim Besuch unserer Karriereseite sicher
+                fühlst. Im
+                Folgenden möchten wir Dich über die Verarbeitung Deiner personenbezogenen Daten bei uns informieren:
+                <a href="#">Datenschutzhinweis im Recruiting</a>
+            </div>
+        </div>
+
+
+
+
+
+
+
+    </div>
+
+    <!-- footer-section -->
+    <div w3-include-html="templates/footer.html"></div>
+
+
+</body>
+
+</html>

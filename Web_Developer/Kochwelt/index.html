@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rezept 1</title>
+
+
+    <script src="script.js"></script>
+
+    <style>
+        body {
+            margin: 0;
+        }
+        .body-box {
+            margin-left: 125px;
+            margin-right: 125px;
+        }
+        .above-the-fold-box {
+            display: flex;
+            height: 40vh;
+            padding: 50px;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        }
+        .above-the-folder-text {
+            max-width: 550px;
+            padding-left: 20px;
+        }
+        .above-the-folder-box h1 {
+            text-align: center;
+        }
+        .img-french-croissants {
+            height: 250px;
+            width: 350px;
+            object-fit: contain;
+        }
+        .box h1 {
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            text-align: center;
+            margin: 50px;
+        }
+        .box-text {
+            display: flex;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            margin: 100px;
+            margin-top: 20px;
+        }
+        .img-wok {
+            height: 200px;
+            padding-right: 50px;
+        }
+        .new-inspirations {
+            text-align: center;
+            padding-top: 15px;
+            height: 60vh;
+            background-color: grey;
+        }
+        .inspiration-elemente {
+            display: flex;
+            justify-content: space-evenly;
+        }
+        .inspiration-img {
+            height: 200px;
+        }
+        .element {
+            text-align: center;
+        }
+        .btn {
+            display: flex;
+            justify-content: center;
+            background-color: green;
+            max-width: 150px;
+            height: 50px;
+        }
+        .btn a {
+            display: flex;
+            align-items: center;
+            text-decoration: none;
+            color: white;
+        }
+    </style>
+
+<body onload="includeHTML()">
+    <div class="body-box">
+
+        <div w3-include-html="templates/header.html"></div>
+
+
+
+        <!-- above-the-fold-section -->
+        <div class="above-the-fold-box">
+            <img class="img-french-croissants" src="img/croissant.jpg" alt="">
+
+            <div class="above-the-folder-text">
+                <h1>Französische Croissants</h1>
+                <span>Schmackhafte Croissants können auch zu Hause sehr einfach gebacken werden. Mit ca. 30 Minuten
+                    Aufwand
+                    kannst du ein wundervolles Frühstück zaubern</span>
+
+                <div class="btn">
+                    <a href="#">Rezept öffnen</a>
+                </div>
+            </div>
+
+        </div>
+
+
+
+
+        <!-- lust-auf-was-neues-section -->
+        <div class="new-inspirations">
+
+            <div class="new-inspiration-title">
+                <h2>Lust auf was Neues?</h2>
+
+            </div>
+            <div class="inspiration-elemente">
+                <div class="element">
+                    <img class="inspiration-img" src="img/croissant.jpg" alt="">
+
+                    <p>Frische Croisants</p>
+
+                </div>
+
+                <div class="element">
+                    <img class="inspiration-img" src="img/croissant.jpg" alt="">
+
+                    <p>Frische Croisants</p>
+
+                </div>
+
+                <div class="element">
+                    <img class="inspiration-img" src="img/croissant.jpg" alt="">
+
+                    <p>Frische Croisants</p>
+
+                </div>
+            </div>
+
+        </div>
+
+        <!-- pfanne-vs.wok-section -->
+        <div class="box">
+            <h1>Pfanne vs. Wok - Was ist besser?</h1>
+
+            <div class="box-text">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga, itaque cupiditate? Architecto
+                    quibusdam
+                    obcaecati nihil nam quas, amet iure accusantium debitis quis sint assumenda, perferendis eveniet
+                    officia
+                    illo necessitatibus doloribus!</p>
+                <img class="img-wok" src="img/wok.jpg" alt="">
+            </div>
+
+        </div>
+
+    </div>
+<!-- footer-section -->
+<div w3-include-html="templates/footer.html"></div>
+
+</body>
+
+</html>

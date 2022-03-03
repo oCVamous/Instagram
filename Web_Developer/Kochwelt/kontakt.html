@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kontakt</title>
+
+    <script src="script.js"></script>
+
+    <style>
+        body {
+            margin: 0px;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+        }
+
+        .body-box {
+            margin-left: 125px;
+            margin-right: 125px;
+        }
+
+        h1 {
+            text-align: center;
+            color: green;
+            padding-top: 30px;
+        }
+
+        .left-right-box {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .left {
+            max-width: 875px;
+        }
+
+        button {
+            background-color: green;
+            color: white;
+            height: 75px;
+            width: 500px;
+            font-size: 20px;
+        }
+        .button {
+            padding-bottom: 20px;
+        }
+        a {
+            text-decoration: none;
+        }
+
+        .right {
+            padding-top: 30px;
+            max-width: 400px;
+            border-left: 1px solid black;
+        }
+
+        .otl {
+            padding-top: 10px;
+            padding-bottom: 10px;
+        }
+
+        .phone {
+            padding-top: 10px;
+            padding-bottom: 10px;
+        }
+
+        .advice-call {
+            padding-top: 10px;
+            padding-bottom: 10px;
+        }
+
+        .e-mail {
+            padding-bottom: 10px;
+            padding-top: 10px;
+        }
+
+        .textfields {
+            padding-top: 25px;
+            display: flex;
+        }
+
+        .input-categorie {
+            max-width: 20px;
+        }
+
+        textarea{
+            background-color: grey;
+            width: 850px;
+            height: 50px;
+            padding: 20px;
+        }
+
+        .textarea-commentar {
+            height: 125px;
+        }
+
+        .right-box {
+            padding-left: 20px;
+        }
+
+        .left-box {
+            padding-top: 20px;
+        }
+
+        .text {
+            padding-bottom: 20px;
+        }
+        .btn-send {
+            background-color:green;
+            width: 150px;
+            height: 50px;
+        }
+
+        .kontakt-inputs {
+            border-radius: 50px;
+        }
+
+      
+        @media(max-width: 1000px){
+            .hide-mobile {
+                display: none;
+            }
+
+        }
+    </style>
+
+</head>
+
+
+
+<body onload="includeHTML()">
+    <div class="body-box">
+        <div class="hide-mobile" w3-include-html="templates/header.html"></div>
+        <div class="content">
+            <h1>KONTAKTIERE UNS</h1>
+            <div class="left-right-box">
+                <div class="left_kontakt">
+                    <div class="text">
+                        <h2>Du hast offene Fragen?</h2>
+                        <span>Die meisten Fragen beantworten wir dir in unserem Helpcenter. Hier findest du in
+                        Sekundenschnelle
+                        eine Antwort auf deine Frage. Unser Helpcenter beantwortet dir die häufigst gestellten
+                        Fragen zu neues Rezept einreichen, Technische
+                        Fragen und
+                        viele
+                        weitere Fragen.
+                    </span>
+                    </div>
+
+                    <span>Bitte die <a href="#">Datenschutzerklärung</a> beachten.</span>
+
+                    <div class="textfields">
+                        <div class="input-fields_kontakt">
+                            <input class="kontakt-inputs" type="text" name="name" placeholder="Name">
+                            <input class="kontakt-inputs" type="text" name="email" placeholder="E-Mail">
+                            <input class="kontakt-inputs" type="text" name="subject" placeholder="Betreff">
+
+                            <textarea class="textarea-commentar" placeholder="Deine Nachricht an uns" name="" id="" cols="30" rows="10"></textarea>
+                            <p>* Notwendige Felder</p>
+                            <button type="submit" class="btn-send" value="Submit">Senden</button>
+
+                        </div>
+                    </div>
+                </div>
+
+                <div class="right">
+                    <div class="right-box">
+
+                        <h2>Kontaktdaten</h2>
+
+                        <div class="otl">
+                            <b>Kochwelt</b> <br> Langer Weg 1 <br> 55555 Berlin <br> Deutschland <br>
+                        </div>
+
+
+                        <div class="phone">
+                            <b>Telefon: </b> <br> +49 30 555555555 (Deutsches Festnetz) <br> 0800 5555555 (Innerhalb Deutschlands) <br>
+                        </div>
+
+                        <div class="advice-call">
+                            <b>Beratungsgespräche: </b> <br> +49 30 555555555 <br> +49 30 555555555 <br>
+
+                            <div class="e-mail">
+                                <b>E-Mail (Support)</b> <br> support[at]kochwelt.email <br>
+                                <br> (Bitte das @-Zeichen ersetzen, Spamschutz) <br>
+                                <br> Wir sind Montags bis Freitags für euch erreichbar. <br>
+                            </div>
+                        </div>
+                    </div>
+
+
+
+
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <div w3-include-html="templates/footer.html"></div>
+
+
+</body>
+
+</html>
